@@ -1,4 +1,3 @@
-import numpy as np
 
 def int2vector(unsigned_int):
     hex_string = f'{unsigned_int:032x}'
@@ -262,6 +261,7 @@ def main():
     known_ciphertext = "d02d2593fb4bb75c4df6e5a74ffce9be"
     flag_encrypted = "b0123780b7d3e6cf3621a640e95f4dafd2e3c392f6cd1ccfed055e2160df382a79923392b9a84b6566ccde65f74f621d"
     k = recover_key(known_plaintext, known_ciphertext)
+    print(k)
     print(recover_flag(flag_encrypted, k))
 
 
